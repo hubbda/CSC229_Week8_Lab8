@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class hw8 {
     static int getSumPrime(int n) {
         int sum = 0;
@@ -24,6 +26,11 @@ public class hw8 {
     }
 
     public static void main(String[] args) {
-        System.out.println(getSumPrime(100));
+        Scanner scnr = new Scanner(System.in);
+        int number;
+
+        System.out.print("Enter a number: ");
+        number = scnr.nextInt();
+        System.out.println("The sum between 0 and " + number + " is: " + getSumPrime(number));
     }
 }
